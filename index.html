@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>???? ???? | ?????? Football</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+    * {margin:0; padding:0; box-sizing:border-box; font-family: 'Cairo', sans-serif;}
+    body {background:#0a1f44; color:#fff;}
+    
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #0046be 0%, #001e5a 100%);
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #ffcc00;
+    }
+    .logo {font-size: 28px; font-weight: 900; color: #ffcc00;}
+    .logo span {color: #fff;}
+    .btn-whatsapp {
+      background: #25D366; color:#fff; padding:10px 20px; 
+      border-radius: 8px; text-decoration:none; font-weight:700;
+    }
+    
+    /* Hero */
+    .hero {
+      text-align:center; padding:80px 5%;
+      background: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1920') center/cover;
+      position:relative;
+    }
+    .hero::before {
+      content:''; position:absolute; inset:0; 
+      background:rgba(0,30,90,0.85);
+    }
+    .hero * {position:relative; z-index:2;}
+    .hero h1 {font-size:42px; color:#ffcc00; margin-bottom:15px; font-weight:900;}
+    .hero p {font-size:18px; margin-bottom:30px; color:#e0e0e0;}
+    .btn-main {
+      background:#ffcc00; color:#001e5a; padding:14px 35px;
+      border-radius:8px; text-decoration:none; font-weight:900; font-size:18px;
+      display:inline-block; transition:0.3s;
+    }
+    .btn-main:hover {transform:scale(1.05); background:#ffd633;}
+    
+    /* Products */
+    .products {padding:60px 5%; max-width:1200px; margin:auto;}
+    .section-title {text-align:center; font-size:32px; color:#ffcc00; margin-bottom:40px;}
+    .cards {
+      display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); 
+      gap:25px;
+    }
+    .card {
+      background:#0d2b5e; border:2px solid #0046be; border-radius:12px;
+      overflow:hidden; transition:0.3s;
+    }
+    .card:hover {transform:translateY(-8px); border-color:#ffcc00;}
+    .card-header {
+      background:#0046be; padding:15px; text-align:center; 
+      font-weight:900; font-size:20px; color:#ffcc00;
+    }
+    .card-body {padding:20px;}
+    .price {font-size:28px; font-weight:900; color:#ffcc00; margin:15px 0;}
+    .features li {margin:8px 0; list-style:none;}
+    .features li::before {content:'?'; color:#ffcc00; margin-left:8px;}
+    .card .btn-main {width:100%; text-align:center; margin-top:15px; font-size:16px;}
+    
+    /* Footer */
+    footer {
+      background:#001e5a; text-align:center; padding:30px 5%; 
+      border-top:3px solid #ffcc00; margin-top:40px;
+    }
+    footer p {color:#aaa; margin:5px 0;}
+    
+    @media(max-width:600px){
+      .hero h1{font-size:32px;}
+      header{flex-direction:column; gap:15px;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">???? <span>????</span></div>
+    <a href="https://wa.me/212600000000" class="btn-whatsapp">????? ??????</a>
+  </header>
+
+  <section class="hero">
+    <h1>???? ?????? Football ????? ???????</h1>
+    <p>?????? ?????? 100% | ????? ???? | ??? 24 ????</p>
+    <a href="#products" class="btn-main">???? ????????</a>
+  </section>
+
+  <section class="products" id="products">
+    <h2 class="section-title">?????? ???????</h2>
+    <div class="cards">
+      
+      <div class="card">
+        <div class="card-header">???? ??????</div>
+        <div class="card-body">
+          <ul class="features">
+            <li>????? 85+</li>
+            <li>50 ??? ?????</li>
+            <li>?????? ?????? x3</li>
+            <li>???? 7 ????</li>
+          </ul>
+          <div class="price">99 ????</div>
+          <a href="https://wa.me/212600000000?text=???? ?????? ????????" class="btn-main">???? ????</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">???? ????</div>
+        <div class="card-body">
+          <ul class="features">
+            <li>????? 90+</li>
+            <li>200 ??? ?????</li>
+            <li>??????? x2</li>
+            <li>???? 15 ???</li>
+          </ul>
+          <div class="price">249 ????</div>
+          <a href="https://wa.me/212600000000?text=???? ?????? ??????" class="btn-main">???? ????</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">???? ??????</div>
+        <div class="card-body">
+          <ul class="features">
+            <li>????? 94+</li>
+            <li>????? ?????</li>
+            <li>??????? x5</li>
+            <li>???? ??? ????</li>
+          </ul>
+          <div class="price">599 ????</div>
+          <a href="https://wa.me/212600000000?text=???? ?????? ????????" class="btn-main">???? ????</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>???? ????</strong> - ??? ????? ?? ??? ?????? Football</p>
+    <p>????? ??????: ?????? 0600000000 | ???????? @hussam.store</p>
+    <p>© 2026 ???? ?????? ??????</p>
+  </footer>
+
+</body>
+</html>
